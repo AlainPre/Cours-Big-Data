@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    font-size: 12px;
+}
+body {
+    font-family: 'Arial', sans-serif;
+}
+#commandes {margin: 5px;}
+
+#resultats {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#resultats div {
+    flex:0 0 165px;
+    border:outset 3px silver;
+    padding:3px;
+    margin:2px;
+}
+#resultats div.best {
+    background-color: rgb(89, 185, 89);
+}
+#resultats div.encours {
+    border:outset 3px red;
+}
+#resultats h2 {
+    position: absolute;
+    font-size:2rem;
+    margin:0;
+}
+#resultats p {
+    margin:0;
+    padding-left: 30px;
+}
+#no {
+    width: 50px;
+}
+
+#status {display: flex; margin: 5px;}
+#status div {flex: 0 0 150px;}
+#stats {display: flex; margin: 5px;}
+#stats-gains {flex: 0 0 150px;}
+#stats-coups {flex: 0 0 150px;}
+#stats-perfs {flex: 0 0 300px; font-weight: bold;}
